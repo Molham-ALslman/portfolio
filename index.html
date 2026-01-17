@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Dark Mode Edition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans+Arabic:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-dark": "#121212",
+                        "card-dark": "#1e1e1e",
+                        "border-dark": "#2a2a2a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-white font-display;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary/30">
+<div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined">browse_gallery</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-white">كرييتف</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#about">عني</a>
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#projects">مشاريعي</a>
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#contact">تواصل معي</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">
+                        تواصل الآن
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-28">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 order-2 md:order-1">
+<div class="space-y-4">
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
+                                أهلاً، أنا <span class="text-primary">مصمم مبدع</span> متخصص في بناء التجارب
+                            </h1>
+<p class="text-lg text-gray-400 max-w-lg leading-relaxed">
+                                أساعد العلامات التجارية على النمو من خلال تصميم واجهات مستخدم ذكية وتجارب رقمية فريدة تجمع بين الجمال والوظيفة.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-center hover:shadow-lg hover:shadow-primary/40 transition-all" href="#projects">
+                                شاهد مشاريعي
+                            </a>
+<a class="bg-card-dark text-white border border-border-dark px-8 py-4 rounded-xl font-bold text-center hover:bg-border-dark transition-all" href="#contact">
+                                تواصل معي
+                            </a>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative aspect-square w-full max-w-[500px] mx-auto">
+<div class="absolute inset-0 bg-primary/20 rounded-3xl rotate-6"></div>
+<div class="relative h-full w-full bg-cover bg-center rounded-3xl shadow-2xl overflow-hidden ring-1 ring-white/10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB__NTNdm8Do1fnG2scxjc3z_8VSvy7zJLeUfiEMxg60Zr31NSIjoleJQtaVrhoj3TNUTo3A1dFxKZ0pKueex332gp_7dahQTEXLIS4XaRkIzna9sqK30O5Edsyi4luvNnwIIk3RKaEgfY2yyAjt2FH96Sb6Fi5NPgEz9QwgmHgbusbMx1EXqzbWkHXm0eeFEYQX8Az3iIhLGBsS4zhIkLxVqNSzEdmPJU-8bbK7HPBKXsCYAvzX4CNQtRhdBicI0Yc2ByUcSFkIeo");'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-card-dark/50 py-12 border-y border-border-dark">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-3xl font-black text-primary">50+</div>
+<div class="text-sm text-gray-500 font-medium">مشروع منجز</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-primary">5+</div>
+<div class="text-sm text-gray-500 font-medium">سنوات خبرة</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-primary">12</div>
+<div class="text-sm text-gray-500 font-medium">جوائز تصميم</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-primary">100%</div>
+<div class="text-sm text-gray-500 font-medium">رضا العملاء</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 lg:px-10 py-24" id="about">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h2 class="text-3xl font-bold mb-6 relative text-white">
+                            عني
+                            <span class="absolute bottom-[-10px] right-0 w-12 h-1 bg-primary rounded-full"></span>
+</h2>
+<p class="text-gray-400 leading-relaxed mb-6">
+                            أؤمن بأن التصميم الجيد هو الذي يحل المشكلات بذكاء وأناقة. مسيرتي المهنية بدأت بالشغف بالفنون البصرية وتطورت إلى التركيز على تجربة المستخدم والبرمجة الإبداعية.
+                        </p>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-6 rounded-2xl border border-border-dark bg-card-dark hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">devices</span>
+<h3 class="text-lg font-bold mb-2 text-white">تصميم واجهات المستخدم</h3>
+<p class="text-sm text-gray-500 group-hover:text-gray-400">بناء واجهات عصرية تركز على سهولة الاستخدام والوصول.</p>
+</div>
+<div class="p-6 rounded-2xl border border-border-dark bg-card-dark hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">fingerprint</span>
+<h3 class="text-lg font-bold mb-2 text-white">هوية العلامة التجارية</h3>
+<p class="text-sm text-gray-500 group-hover:text-gray-400">خلق هويات بصرية فريدة تعبر عن قيم الشركة ورؤيتها.</p>
+</div>
+<div class="p-6 rounded-2xl border border-border-dark bg-card-dark hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">lightbulb</span>
+<h3 class="text-lg font-bold mb-2 text-white">التفكير التصميمي</h3>
+<p class="text-sm text-gray-500 group-hover:text-gray-400">نهج تحليلي لحل المشكلات المعقدة من خلال التصميم المبتكر.</p>
+</div>
+<div class="p-6 rounded-2xl border border-border-dark bg-card-dark hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">code</span>
+<h3 class="text-lg font-bold mb-2 text-white">التطوير الإبداعي</h3>
+<p class="text-sm text-gray-500 group-hover:text-gray-400">تحويل التصاميم إلى أكواد برمجية نظيفة وقابلة للتوسع.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-card-dark/30 py-24" id="projects">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-10">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-bold mb-2 text-white">مشاريعي المختارة</h2>
+<p class="text-gray-500">نظرة على بعض الأعمال التي قمت بتنفيذها مؤخراً</p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                            جميع المشاريع
+                            <span class="material-symbols-outlined text-sm">arrow_back</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-card-dark ring-1 ring-white/5">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">عرض المشروع</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8eqvNWvFnLJU8vpbvjPBJHp0ybjovulOy8xrE0fFXAONR2-hFKGoT3f0G7S2LjnQrVkDYpyb0KsCf1RqSfFTkVrxVtMUTqK1gSHoSbw-L2DbAZ8jzCS3GdsSb7Jm0ZbgOJmHqmq9b3-6iAFtw_g_PmUYUUkWjDZDyhJxjuexFCO1nYYNXNPBCzQl1xHjqs1OfigWF5zQX34rN30CqqAFADZDC-MAWKuInlTGuPMU4ld_BnVB49Sp0C3vl-PiN-SYTnpBL5l9WvLM");'>
+</div>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase mb-2 block">تجربة المستخدم</span>
+<h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">تطبيق الخدمات المالية</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-card-dark ring-1 ring-white/5">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">عرض المشروع</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGzaj41WRT03uZsHnGP1z9lPQ4PNVTLOJHdPm1bEWwnE-JgI_QAOtG_ofTyWEli75b0DU4GCx9lRlGq9gTw3ZX7qGJk-ndUg5BWVP7e0GafBca-oOSttZoMQj885StUU9J745aWOhLFDTb58ihcMr4K5oivNJofKRG_G-hX6i4y6uIg85-WF8GUQJw3UjyqFjN_mf31CaVsoxvAEx5oyeNUC9w9Pdeirn7VJJh2OS8DSaFnE3dKlbGPje_x2CFKJotTz4SeMEy3HM");'>
+</div>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase mb-2 block">هوية بصرية</span>
+<h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">العلامة التجارية لشركة تيك</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-card-dark ring-1 ring-white/5">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">عرض المشروع</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCnFlmr4GtSjlJGqMiESgEnbtl4-uMXdQmTirfbQXrI36rWMHgePXFE_N6snm_8X18xRMZidZ5U9NCDPLu2M1tQn_-sCOxc7fS42UWS3JQH-Ni3yhbwIVMQNiReHfS5P8py0FBS0FK7PQ2H3NjpVdP_uWB_hwG33XRVy9WkQ4L5YUYVFbb4T6LeagNbA28Uj1rj40xo2_jgwnDObyjG2lu_bVv77v94ONJEO71fvD7G5wv0NEl8pTrhlg6X-F7of9zMh80dJ_HOQU");'>
+</div>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase mb-2 block">تطوير ويب</span>
+<h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">لوحة تحكم إدارة البيانات</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 lg:px-10 py-24" id="contact">
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="text-4xl font-black mb-6 text-white">دعنا نعمل معاً</h2>
+<p class="text-gray-400 text-lg mb-10 leading-relaxed">
+                            هل لديك مشروع جديد أو تريد فقط الدردشة حول التصميم؟ أنا دائماً منفتح لمناقشة فرص العمل الجديدة والمشاريع الإبداعية.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="text-sm text-gray-500">راسلني عبر</div>
+<div class="font-bold text-gray-200">hello@creative.me</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<div class="text-sm text-gray-500">اتصل بي</div>
+<div class="font-bold text-gray-200">+966 50 000 0000</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<div class="text-sm text-gray-500">الموقع</div>
+<div class="font-bold text-gray-200">الرياض، المملكة العربية السعودية</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-8 rounded-3xl border border-border-dark shadow-2xl">
+<form class="space-y-5">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-300">الاسم الكامل</label>
+<input class="w-full bg-background-dark border border-border-dark rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm py-3 px-4 text-white" placeholder="مثال: خالد محمد" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-300">البريد الإلكتروني</label>
+<input class="w-full bg-background-dark border border-border-dark rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm py-3 px-4 text-white" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-300">الموضوع</label>
+<input class="w-full bg-background-dark border border-border-dark rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm py-3 px-4 text-white" placeholder="كيف يمكنني مساعدتك؟" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-300">الرسالة</label>
+<textarea class="w-full bg-background-dark border border-border-dark rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm py-3 px-4 text-white" placeholder="اكتب رسالتك هنا..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary/90 transition-all" type="submit">
+                                أرسل رسالة
+                            </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-black text-gray-500 py-12 border-t border-border-dark">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 pb-12 border-b border-border-dark">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined">browse_gallery</span>
+</div>
+<h2 class="text-xl font-bold text-white tracking-tight">كرييتف</h2>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Dribbble</a>
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">Behance</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4">
+<p class="text-sm">© 2024 جميع الحقوق محفوظة. صُمم بكل حب.</p>
+<div class="flex gap-8 text-sm">
+<a class="hover:text-white transition-colors" href="#">سياسة الخصوصية</a>
+<a class="hover:text-white transition-colors" href="#">شروط الخدمة</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
